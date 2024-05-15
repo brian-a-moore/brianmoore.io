@@ -12,28 +12,28 @@ export const jobs: TJob[] = [
     company: "Ally Financial Services",
     start: "2022",
     end: "Present",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae.",
+    desc: "Build and design features for our company’s main customer information API that is built using Node.JS, Express, Serverless and Typescript. Focusing heavily on AWS serverless infrastructure, such as; Lambdas, SQS, DynamoDB, EventBridge, API Gateway and more.",
   },
   {
     title: "Software Engineer",
     company: "Mark43",
     start: "2020",
     end: "2022",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae.",
+    desc: "Worked primarily on the front-end using React.JS and Electron to build a multi-platform real-time Computed-aided Dispatch application for first responders. Responsible for multiple mission-critical features using technologies such as; Redux, RxJS, WebSockets, Docker and IndexDB.",
   },
   {
     title: "Full-Stack Developer",
     company: "Entrinsik",
     start: "2019",
     end: "2020",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae.",
+    desc: "Designed and developed features for an industry-leading data analytics tool using Node/Hapi.JS, Angular, PostgreSQL and the popular visualization library Highcharts. Also did some design and prototyping using Adobe XD.",
   },
   {
     title: "Associate Developer",
     company: "Blue Cross NC",
     start: "2016",
     end: "2019",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae.",
+    desc: "Worked in the Innovation Garage where I was tasked to develop and deliver full-stack applications independently that were built in Node.JS and React using AWS, Jenkins and Docker. Successfully deployed five projects to production including several award-winning applications.",
   },
 ];
 
