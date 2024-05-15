@@ -12,7 +12,7 @@ export const jobs: TJob[] = [
     company: "Ally Financial Services",
     start: "2022",
     end: "Present",
-    desc: "Build and design features for our company’s main customer information API that is built using Node.JS, Express, Serverless and Typescript. Focusing heavily on AWS serverless infrastructure, such as; Lambdas, SQS, DynamoDB, EventBridge, API Gateway and more.",
+    desc: "Build and design features for our company's main customer information API that is built using Node.JS, Express, Serverless and Typescript. Focusing heavily on AWS serverless infrastructure, such as; Lambdas, SQS, DynamoDB, EventBridge, API Gateway and more.",
   },
   {
     title: "Software Engineer",
@@ -96,7 +96,7 @@ export const skills: TSkill[] = [
     exp: 70,
   },
   {
-    title: "PostgeSQL / MySQL",
+    title: "PostgreSQL / MySQL",
     exp: 70,
   },
   {
@@ -151,7 +151,7 @@ export type TProject = {
 export const projects: TProject[] = [
   {
     title: "Rail",
-    desc: "Rail is a mobile app designed to make politics accessible to anyeone by allowing users to create their own bills, vote on others and match with those around them.",
+    desc: "Rail is a mobile app designed to make politics accessible to anyone by allowing users to create their own bills, vote on others and match with those around them.",
     img: "https://www.railpolitics.com/static/rail/favicon.png",
     link: "https://railpolitics.com",
   },
