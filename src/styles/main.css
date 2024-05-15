@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* eslint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* eslint-enable */
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+  background: #297878;
+  background: radial-gradient(at left top, #297878, #0e2f72);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+progress::-moz-progress-bar {
+  background: #297878;
+  background: radial-gradient(at left top, #297878, #0e2f72);
+  border-radius: 4px;
+  overflow: hidden;
+}
