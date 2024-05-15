@@ -9,7 +9,7 @@ type Props = {
 
 const Nav: React.FC<Props> = ({ isHomeVisible }) => {
   return (
-      <nav className={`fixed top-0 left-0 w-full z-20 flex justify-center ${isHomeVisible ? '' : 'bg-[#0E2F72] shadow-md'}`}>
+      <nav className={`fixed top-0 left-0 w-full z-20 flex justify-center ${isHomeVisible ? 'bg-[rgba(21,27,41,0.5)] backdrop-blur-sm' : 'bg-[#0E2F72] shadow-md'}`}>
         <Container>
           <NavLink href="#bio">
             <Icon path={mdiInformation} size={1} />
