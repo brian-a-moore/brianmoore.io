@@ -12,12 +12,13 @@ import Banner from "../components/Banner";
 import Container from "../components/Container";
 import IconLink from "../components/IconLink";
 import Nav from "../components/Nav";
+import Project from "../components/Project";
 import Screen from "../components/Screen";
 import Skill from "../components/Skill";
 import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import WorkExperience from "../components/WorkExperience";
-import { jobs, skills } from "../data";
+import { jobs, projects, skills } from "../data";
 
 const App: React.FC = () => {
   const [isHomeVisible, setIsHomeVisible] = useState(true);
@@ -142,26 +143,31 @@ const App: React.FC = () => {
         <Container>
           <section className="flex flex-col gap-10">
             <Subtitle>EXPERIENCE</Subtitle>
-            <div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 {jobs.map((job, index) => (
                   <WorkExperience key={index} job={job} />
                 ))}
               </div>
-            </div>
             <Subtitle>SKILLS</Subtitle>
-            <div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {skills.map((skill, index) => (
                   <Skill key={index} skill={skill} />
                 ))}
               </div>
-            </div>
           </section>
         </Container>
       </Screen>
       <Screen id="projects">
         <Title>PROJECTS</Title>
+        <Container>
+          <section className="flex flex-col gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {projects.map((project, index) => (
+                <Project key={index} project={project} />
+              ))}
+            </div>
+          </section>
+        </Container>
       </Screen>
     </div>
   );

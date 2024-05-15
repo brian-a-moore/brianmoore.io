@@ -140,3 +140,25 @@ export const skills: TSkill[] = [
     exp: 55,
   },
 ];
+
+export type TProject = {
+  title: string;
+  desc: string;
+  img: string;
+  link: string;
+};
+
+export const projects: TProject[] = [
+  {
+    title: "Rail",
+    desc: "Rail is a mobile app designed to make politics accessible to anyeone by allowing users to create their own bills, vote on others and match with those around them.",
+    img: "https://www.railpolitics.com/static/rail/favicon.png",
+    link: "https://railpolitics.com",
+  },
+  {
+    title: "Oriter",
+    desc: "Oriter uses AI to generate unique and heartfelt content for funeral homes who are assisting their clients. The platform is built using React, Node, and AWS.",
+    img: "https://oriter.com/images/demo-fancy/s1image3.webp",
+    link: "https://oriter.com",
+  },
+];
