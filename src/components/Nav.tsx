@@ -2,11 +2,7 @@ import { mdiBriefcase, mdiFormatListBulletedType, mdiInformation } from "@mdi/js
 import Container from "./Container";
 import NavLink from "./NavLink";
 
-type Props = {
-  isHomeVisible: boolean;
-}
-
-const Nav: React.FC<Props> = () => {
+const Nav: React.FC = () => {
   return (
       <nav className={`fixed top-0 left-0 w-full z-20 flex justify-center bg-[rgba(21,27,41,0.5)] backdrop-blur-sm shadow-md`}>
         <Container>

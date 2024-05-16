@@ -44,7 +44,7 @@ const App: React.FC = () => {
         scrollPaddingTop: "40px",
       }}
     >
-      <Nav isHomeVisible={isHomeVisible} />
+      <Nav />
       {!isHomeVisible && (
         <a
           className="fixed bottom-10 right-10 z-10 size-10 rounded-full flex items-center justify-center shadow-lg"
