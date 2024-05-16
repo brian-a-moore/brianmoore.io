@@ -6,7 +6,7 @@ type Props = {
 
 const Banner: React.FC<Props> = ({ children }) => {
   return (
-    <section className="z-10 flex justify-center w-full">
+    <section className="flex justify-center w-full">
       <Container>
         {children}
       </Container>

@@ -8,7 +8,7 @@ const Avatar: React.FC = () => {
         src="../../brian-moore.png"
         alt="Brian Moore"
         title="Brian Moore"
-        className="w-full h-full"
+        className="w-full h-full rounded-full overflow-hidden"
         style={{
           filter: "drop-shadow(0 0 16px rgba(0, 0, 0, 0.3))",
         }}

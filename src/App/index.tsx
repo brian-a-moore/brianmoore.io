@@ -1,14 +1,7 @@
-import {
-  mdiArrowUp,
-  mdiEmail,
-  mdiGithub,
-  mdiLinkedin,
-  mdiWeb
-} from "@mdi/js";
+import { mdiArrowUp, mdiEmail, mdiGithub, mdiLinkedin, mdiWeb } from "@mdi/js";
 import Icon from "@mdi/react";
 import { useEffect, useRef, useState } from "react";
 import Avatar from "../components/Avatar";
-import Banner from "../components/Banner";
 import Container from "../components/Container";
 import IconLink from "../components/IconLink";
 import Nav from "../components/Nav";
@@ -45,8 +38,10 @@ const App: React.FC = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-screen h-screen overflow-y-auto"
+      className="fixed top-0 left-0 w-screen h-screen pt-[80px] md:pt-[64px] overflow-y-auto"
       style={{
+        background: "#0E2F72",
+        backgroundImage: "linear-gradient(#297878, #0E2F72)",
         scrollBehavior: "smooth",
         scrollPaddingTop: "40px",
       }}
@@ -56,30 +51,33 @@ const App: React.FC = () => {
         <a
           className="fixed bottom-10 right-10 z-10 size-10 rounded-full flex items-center justify-center shadow-lg"
           href="#home"
-          title='To Top'
-           style={{
-          background: '#0E2F72',
-          backgroundImage: 'linear-gradient(#297878, #0E2F72)'
-        }}
+          title="To Top"
+          style={{
+            background: "#0E2F72",
+            backgroundImage: "linear-gradient(#297878, #0E2F72)",
+          }}
         >
-          <Icon path={mdiArrowUp} size={1} color='#fff' />
+          <Icon path={mdiArrowUp} size={1} color="#fff" />
         </a>
       )}
       <div id="home" ref={homeRef}>
-        <Screen style={{
-          background: '#0E2F72',
-          backgroundImage: 'linear-gradient(#297878, #0E2F72)'
-        }} override>
-          <Banner>
+        <Screen style={{ backgroundColor: 'transparent' }}>
+          <Container>
             <div className="flex flex-col gap-y-1 sm:gap-y-4">
-              <h1 className="text-4xl text-white sm:text-5xl md:text-6xl lg:text-8xl font-semibold" style={{
-                textShadow: '0 4px 4px rgba(0,0,0,0.3)'
-              }}>
+              <h1
+                className="text-4xl text-white sm:text-5xl md:text-6xl lg:text-8xl font-semibold"
+                style={{
+                  textShadow: "0 4px 4px rgba(0,0,0,0.3)",
+                }}
+              >
                 Brian Moore
               </h1>
-              <h2 className="text-xl text-white sm:text-2xl md:text-3xl lg:text-4xl" style={{
-                textShadow: '0 4px 4px rgba(0,0,0,0.3)'
-              }}>
+              <h2
+                className="text-xl text-white sm:text-2xl md:text-3xl lg:text-4xl"
+                style={{
+                  textShadow: "0 4px 4px rgba(0,0,0,0.3)",
+                }}
+              >
                 Software Engineer
               </h2>
               <div className="flex gap-x-2 sm:gap-x-4">
@@ -98,7 +96,7 @@ const App: React.FC = () => {
               </div>
             </div>
             <Avatar />
-          </Banner>
+          </Container>
         </Screen>
       </div>
       <Screen id="bio">
@@ -143,17 +141,17 @@ const App: React.FC = () => {
         <Container>
           <section className="flex flex-col gap-10">
             <Subtitle>EXPERIENCE</Subtitle>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {jobs.map((job, index) => (
-                  <WorkExperience key={index} job={job} />
-                ))}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              {jobs.map((job, index) => (
+                <WorkExperience key={index} job={job} />
+              ))}
+            </div>
             <Subtitle>SKILLS</Subtitle>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {skills.map((skill, index) => (
-                  <Skill key={index} skill={skill} />
-                ))}
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {skills.map((skill, index) => (
+                <Skill key={index} skill={skill} />
+              ))}
+            </div>
           </section>
         </Container>
       </Screen>
