@@ -38,10 +38,8 @@ const App: React.FC = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-screen h-screen pt-[80px] md:pt-[64px] overflow-y-auto"
+      className="fixed top-0 bg-[#297878] left-0 w-screen h-screen pt-[80px] md:pt-[64px] overflow-y-auto"
       style={{
-        background: "#0E2F72",
-        backgroundImage: "linear-gradient(#297878, #0E2F72)",
         scrollBehavior: "smooth",
         scrollPaddingTop: "40px",
       }}
@@ -61,7 +59,10 @@ const App: React.FC = () => {
         </a>
       )}
       <div id="home" ref={homeRef}>
-        <Screen style={{ backgroundColor: 'transparent' }}>
+        <Screen style={{
+          background: "#0E2F72",
+          backgroundImage: "linear-gradient(#297878, #0E2F72)",
+        }}>
           <Container>
             <div className="flex flex-col gap-y-1 sm:gap-y-4">
               <h1
@@ -155,7 +156,7 @@ const App: React.FC = () => {
           </section>
         </Container>
       </Screen>
-      <Screen id="projects">
+      <Screen id="projects" style={{ paddingBottom: '50vh' }}>
         <Title>PROJECTS</Title>
         <Container>
           <section className="flex flex-col gap-10">
