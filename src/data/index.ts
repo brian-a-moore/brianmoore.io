@@ -19,14 +19,14 @@ export const jobs: TJob[] = [
     company: "Mark43",
     start: "2020",
     end: "2022",
-    desc: "Worked primarily on the front-end using React.JS and Electron to build a multi-platform real-time Computed-aided Dispatch application for first responders. Responsible for multiple mission-critical features using technologies such as; Redux, RxJS, WebSockets, Docker and IndexDB.",
+    desc: "Worked primarily on the front-end using React.JS and Electron to build a multi-platform real-time Computed-aided Dispatch application for first responders. Responsible for multiple mission-critical features using technologies such as; Redux, RxJS, WebSockets, Docker and IndexedDB.",
   },
   {
     title: "Full-Stack Developer",
     company: "Entrinsik",
     start: "2019",
     end: "2020",
-    desc: "Designed and developed features for an industry-leading data analytics tool using Node/Hapi.JS, Angular, PostgreSQL and the popular visualization library Highcharts. Also did some design and prototyping using Adobe XD.",
+    desc: "Designed and developed features for an industry-leading data analytics tool using Node/Hapi.JS, Angular, PostgreSQL and the popular visualization library HighCharts. Also did some design and prototyping using Adobe XD.",
   },
   {
     title: "Associate Developer",
