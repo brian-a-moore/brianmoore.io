@@ -152,7 +152,7 @@ export const projects: TProject[] = [
   {
     title: "Rail",
     desc: "Rail is a mobile app designed to make politics accessible to anyone by allowing users to create their own bills, vote on others and match with those around them.",
-    img: "https://www.railpolitics.com/static/rail/favicon.png",
+    img: "https://www.railpolitics.com/rail.svg",
     link: "https://railpolitics.com",
   },
   {

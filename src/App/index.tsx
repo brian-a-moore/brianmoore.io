@@ -1,4 +1,4 @@
-import { mdiArrowUp, mdiEmail, mdiGithub, mdiLinkedin, mdiWeb } from "@mdi/js";
+import { mdiArrowUp, mdiEmail, mdiGithub, mdiLinkedin } from "@mdi/js";
 import Icon from "@mdi/react";
 import { useEffect, useRef, useState } from "react";
 import Avatar from "../components/Avatar";
@@ -59,10 +59,12 @@ const App: React.FC = () => {
         </a>
       )}
       <div id="home" ref={homeRef}>
-        <Screen style={{
-          background: "#0E2F72",
-          backgroundImage: "linear-gradient(#297878, #0E2F72)",
-        }}>
+        <Screen
+          style={{
+            background: "#0E2F72",
+            backgroundImage: "linear-gradient(#297878, #0E2F72)",
+          }}
+        >
           <Container>
             <div className="flex flex-col gap-y-1 sm:gap-y-4">
               <h1
@@ -82,16 +84,13 @@ const App: React.FC = () => {
                 Software Engineer
               </h2>
               <div className="flex gap-x-2 sm:gap-x-4">
-                <IconLink href="https://www.linkedin.com/in/brian020113/">
+                <IconLink href="https://www.linkedin.com/in/brianmoore0213/">
                   <Icon path={mdiLinkedin} size={1} />
                 </IconLink>
                 <IconLink href="https://github.com/brian-a-moore">
                   <Icon path={mdiGithub} size={1} />
                 </IconLink>
-                <IconLink href="https://sunami.io">
-                  <Icon path={mdiWeb} size={1} />
-                </IconLink>
-                <IconLink href="mailto:brian@sunami.io">
+                <IconLink href="mailto:brianmoore0213+brianmooreio@gmail.com">
                   <Icon path={mdiEmail} size={1} />
                 </IconLink>
               </div>
@@ -156,7 +155,7 @@ const App: React.FC = () => {
           </section>
         </Container>
       </Screen>
-      <Screen id="projects" style={{ paddingBottom: '50vh' }}>
+      <Screen id="projects" style={{ paddingBottom: "50vh" }}>
         <Title>PROJECTS</Title>
         <Container>
           <section className="flex flex-col gap-10">
